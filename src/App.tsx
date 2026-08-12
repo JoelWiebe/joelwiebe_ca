@@ -121,7 +121,7 @@ const ALL_PROJECTS = [
     category: "Ed-Tech & CSCL",
     technologies: ["Angular", "Node.js", "Azure PaaS", "WebSockets", "MongoDB"],
     description: "A real-time classroom orchestration infrastructure supporting collaborative inquiry. Enables teachers to run dynamic scripting pathways and capture high-volume student ideas on a shared canvas.",
-    impact: "Deployed across Grade-8 science cohorts in Toronto learning communities.",
+    impact: "Developed through multi-year co-design with grade 6-7 math educator and classes",
     imageUrl: "https://images.unsplash.com/photo-1531482615713-2afd69097998?auto=format&fit=crop&w=600&q=80"
   },
   {
@@ -190,8 +190,8 @@ const ALL_PROJECTS = [
     subtitle: "Active Learning Meta-Analysis in JLS & ijCSCL",
     category: "Academic & Inquiry",
     technologies: ["Literature Review", "Systematic Coding"],
-    description: "Led a graduate research cohort analyzing active learning strategies across top Learning Sciences journals (JLS and ijCSCL), identifying inquiry-based learning, debates, and problem-based learning trends.",
-    impact: "Presented at ICLS 2021 (Wiebe, Khan, Burron, & Slotta).",
+    description: "Co-led a graduate research cohort analyzing active learning strategies across top Learning Sciences journals (JLS and ijCSCL), identifying inquiry-based learning, debates, and problem-based learning trends.",
+    impact: "Facilitated cross-disciplinary networking of active learning scholars and presented related findings at ICLS 2021 (Wiebe, Khan, Burron, & Slotta).",
     imageUrl: "https://images.unsplash.com/photo-1434030216411-0b793f4b4173?auto=format&fit=crop&w=600&q=80"
   },
   {
@@ -241,7 +241,7 @@ const ALL_PROJECTS = [
     category: "HCI & Robotics",
     technologies: ["WebRTC", "HCI Control Suite", "Telepresence Robotics"],
     description: "Investigated how mobile telepresence robotic nodes control and deliver pediatric clinical nursing simulation training to remote practitioner communities across Northern Saskatchewan.",
-    impact: "Scaffolded social presence and distance clinical education.",
+    impact: "Investigated applications of social presence and distance clinical education for remote nursing education.",
     imageUrl: "https://images.unsplash.com/photo-1485827404703-89b55fcc595e?auto=format&fit=crop&w=600&q=80"
   },
   {
@@ -343,35 +343,35 @@ const SCHOLARLY_PAPERS = {
 // ==========================================
 const LIFESTYLE_CARDS = [
   {
-    id: "stroller-running",
-    title: "Parental Leave & Stroller Running",
-    subtitle: "Guelph, Ontario • Daily Active Fatherhood",
-    category: "Fatherhood & Life",
-    description: "Taking dedicated parental leave to raise my daughter in Guelph has been the most transformative period of my life. Daily stroller runs along Guelph's river trails and parks bridge physical endurance with hands-on parenting.",
+    id: "fatherhood-attunement",
+    title: "Parenting & Co-Regulation",
+    subtitle: "Active Fatherhood • Emotional Attunement",
+    category: "Human Development",
+    description: "Parental leave offered deep insight into co-regulation and emotional attunement. Supporting a toddler's daily growth reinforces the value of responsive environments and developmental scaffolding.",
     imageUrl: "/images/family/cartoon_joel_family_car.jpg"
   },
   {
-    id: "frenchie-dad",
-    title: "Double Frenchie Dad & Wagon Rides",
-    subtitle: "Wagon Outings & Companion Bulldogs",
-    category: "Fatherhood & Life",
-    description: "Co-piloting our Guelph household alongside two energetic French Bulldogs. Neighborhood wagon rides bring our daughter and furry companions together on daily outdoor neighborhood explorations.",
+    id: "frenchie-leadership",
+    title: "Leadership & Environment",
+    subtitle: "Companion Animals • Behavioral Principles",
+    category: "Leadership & Empathy",
+    description: "Caring for companion French Bulldogs highlighted the need for clear leadership, championing others, and protecting psychological safety as the foundation for a nurturing developmental environment.",
     imageUrl: "/images/family/cartoon_toddler_wagon_frenchie.jpg"
   },
   {
-    id: "shared-adventures",
-    title: "Family Exploration & Sincere Living",
-    subtitle: "Miramichi & Beyond",
-    category: "Fatherhood & Life",
-    description: "Grounding high-level computer science research in genuine human connections. Sharing outdoor journeys, river walks, and community experiences with my family fuels my commitment to building technology with empathy.",
+    id: "cultural-empathy",
+    title: "Empathy & Perspective",
+    subtitle: "Community & Cultural Respect",
+    category: "Social Context",
+    description: "Interactions across diverse communities and environments fostered respect for varied backgrounds and human struggles, driving a commitment to build inclusive technology that respects learner agency.",
     imageUrl: "/images/family/cartoon_joel_family_miramichi.jpg"
   },
   {
-    id: "trades-craft",
-    title: "The Maker's Craft & Trades",
-    subtitle: "Roofing, Framing, & Structural Renovations",
-    category: "Crafts & Trades",
-    description: "Framing rafters, building structures, and tackling physical home renovations. Constructing physical architecture requires the exact same logical integrity, structural stability, and precision as architecting scalable software.",
+    id: "iot-wearables-craft",
+    title: "IoT, Wearables & Craft",
+    subtitle: "Physical & Digital Prototyping",
+    category: "Physical & Digital Making",
+    description: "Background in physical trades (framing, roofing, renovations) combined with IoT and wearables exploration continues to inform new frontiers for AI in research, interactive education, and daily life.",
     imageUrl: "/images/family/cartoon_toddler_beach.jpg"
   }
 ];
@@ -496,7 +496,7 @@ export default function App() {
             </div>
             <div className="px-3.5 py-1.5 rounded-lg bg-slate-900/80 border border-slate-800 flex items-center space-x-2">
               <Heart className="w-4 h-4 text-rose-400" />
-              <span>Guelph, Ontario</span>
+              <span>Ontario, Canada</span>
             </div>
           </ScrollReveal>
 
@@ -794,12 +794,12 @@ export default function App() {
       <section id="chronicles" className="py-28 border-b border-slate-900 bg-[#090e17]">
         <div className="max-w-7xl mx-auto px-6 space-y-16">
           
-          <div className="text-center space-y-3 max-w-2xl mx-auto">
+          <div className="text-center space-y-4 max-w-3xl mx-auto">
             <ScrollReveal>
-              <span className="text-xs font-mono uppercase tracking-widest text-emerald-400 font-bold block">Life & Personal Anchors</span>
-              <h2 className="text-3xl sm:text-5xl font-serif font-black tracking-tight">Family, Craft, & Guelph</h2>
-              <p className="text-slate-400 text-sm leading-relaxed font-light">
-                Grounding high-level research in active fatherhood during parental leave, stroller running in Guelph, companion bulldogs, and hands-on structural trades.
+              <span className="text-xs font-mono uppercase tracking-widest text-emerald-400 font-bold block">Life & Personal Foundations</span>
+              <h2 className="text-3xl sm:text-5xl font-serif font-black tracking-tight">Life, Craft, & Inquiry</h2>
+              <p className="text-slate-300 text-sm sm:text-base leading-relaxed font-light">
+                Diverse life experiences—active fatherhood, animal care, physical construction, and academic studies spanning philosophy, technology, and science—instill my well-rounded perspective. This synthesis informs a nuanced understanding of human development, empathy, and creative applications of emerging AI across research, education, and life.
               </p>
             </ScrollReveal>
           </div>
@@ -941,7 +941,7 @@ export default function App() {
       <footer className="w-full bg-[#030509] border-t border-slate-900 py-12">
         <div className="max-w-7xl mx-auto px-6 flex flex-col sm:flex-row items-center justify-between gap-6 text-xs text-slate-400 font-mono">
           <div>
-            <span className="font-extrabold text-slate-200">Joel P. Wiebe</span> • Guelph, Ontario, Canada
+            <span className="font-extrabold text-slate-200">Joel P. Wiebe</span> • Ontario, Canada
           </div>
           <div className="flex items-center space-x-6">
             <a href="https://crowdtutor.org" target="_blank" rel="noopener noreferrer" className="hover:text-amber-400 transition-colors">crowdtutor.org</a>
