@@ -401,40 +401,44 @@ export default function App() {
       {/* ==========================================
           FLOATING EXECUTIVE HEADER
           ========================================== */}
-      <header className="sticky top-0 z-50 w-full bg-[#070b11]/90 backdrop-blur-md border-b border-slate-800/80">
-        <div className="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
+      <header className="sticky top-0 z-50 w-full bg-[#070b11]/95 backdrop-blur-md border-b border-slate-800/80 px-6 py-3.5">
+        <div className="max-w-7xl mx-auto flex flex-col lg:flex-row lg:items-center justify-between gap-4">
           
-          <div className="flex items-center space-x-3">
-            <div className="w-10 h-10 rounded-xl bg-gradient-to-tr from-amber-500 to-emerald-500 p-0.5 shadow-lg shadow-amber-500/10">
+          {/* Left Brand Identifier */}
+          <div className="flex items-center space-x-3.5 flex-shrink-0">
+            <div className="w-10 h-10 rounded-xl bg-gradient-to-tr from-amber-500 to-emerald-500 p-0.5 shadow-lg shadow-amber-500/10 flex-shrink-0">
               <div className="w-full h-full bg-[#070b11] rounded-[10px] flex items-center justify-center font-serif font-black text-amber-400 text-base">
                 JW
               </div>
             </div>
             <div>
-              <span className="font-extrabold tracking-tight text-slate-100 block text-sm sm:text-base">J. Joel P. Wiebe</span>
-              <span className="text-[10px] font-mono text-emerald-400 uppercase tracking-widest font-bold block">
+              <span className="font-extrabold tracking-tight text-slate-100 block text-base leading-tight">Joel P. Wiebe</span>
+              <span className="text-[10px] font-mono text-emerald-400 uppercase tracking-widest font-semibold block leading-tight mt-0.5">
                 Executive Director • Learning Scientist • Software Architect
               </span>
             </div>
           </div>
 
-          <nav className="hidden lg:flex items-center space-x-8 text-xs font-mono tracking-widest text-slate-400 font-bold uppercase">
-            <a href="#crowdtutor" className="hover:text-amber-400 transition-colors">Crowd Tutor</a>
-            <a href="#ai-methodologies" className="hover:text-amber-400 transition-colors">AI Research</a>
-            <a href="#projects" className="hover:text-amber-400 transition-colors">Projects ({ALL_PROJECTS.length})</a>
-            <a href="#chronicles" className="hover:text-amber-400 transition-colors">Life & Craft</a>
-            <a href="#scholarly" className="hover:text-amber-400 transition-colors">Scholarly</a>
-          </nav>
+          {/* Right Nav Links & Button (Single Row, No Wrapping) */}
+          <div className="flex items-center space-x-6 sm:space-x-8 overflow-x-auto no-scrollbar py-1">
+            <nav className="flex items-center space-x-6 sm:space-x-8 text-xs font-mono tracking-widest text-slate-400 font-bold uppercase whitespace-nowrap">
+              <a href="#crowdtutor" className="hover:text-amber-400 transition-colors whitespace-nowrap">Crowd Tutor</a>
+              <a href="#ai-methodologies" className="hover:text-amber-400 transition-colors whitespace-nowrap">AI Research</a>
+              <a href="#projects" className="hover:text-amber-400 transition-colors whitespace-nowrap">Projects ({ALL_PROJECTS.length})</a>
+              <a href="#chronicles" className="hover:text-amber-400 transition-colors whitespace-nowrap">Life & Craft</a>
+              <a href="#scholarly" className="hover:text-amber-400 transition-colors whitespace-nowrap">Scholarly</a>
+            </nav>
 
-          <a 
-            href="https://crowdtutor.org" 
-            target="_blank" 
-            rel="noopener noreferrer"
-            className="hidden sm:inline-flex items-center space-x-2 px-4 py-2 rounded-xl bg-amber-500/10 border border-amber-500/30 text-amber-400 text-xs font-mono font-bold hover:bg-amber-500 hover:text-slate-950 transition-all shadow-md"
-          >
-            <span>crowdtutor.org</span>
-            <ExternalLink className="w-3.5 h-3.5" />
-          </a>
+            <a 
+              href="https://crowdtutor.org" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="hidden sm:inline-flex items-center space-x-2 px-4 py-2 rounded-xl bg-amber-500/10 border border-amber-500/30 text-amber-400 text-xs font-mono font-bold hover:bg-amber-500 hover:text-slate-950 transition-all shadow-md whitespace-nowrap ml-6"
+            >
+              <span>crowdtutor.org</span>
+              <ExternalLink className="w-3.5 h-3.5" />
+            </a>
+          </div>
 
         </div>
       </header>
@@ -472,7 +476,7 @@ export default function App() {
 
           <ScrollReveal delay={300}>
             <p className="text-base sm:text-xl text-slate-300 max-w-3xl leading-relaxed font-light">
-              I bridge high-level learning sciences research with production software architecture. Operating at the intersection of computer science and pedagogy, I pioneer adaptive AI models, psychometric profiling algorithms, and community knowledge platforms designed to cultivate agency and transform personalized instruction.
+              I bridge high-level learning sciences research with production software architecture. Operating at the intersection of computer science and pedagogy, I pioneer applications of emerging AI models, psychometric profiling algorithms, and community knowledge platforms designed to cultivate agency and transform personalized instruction.
             </p>
           </ScrollReveal>
 
@@ -547,29 +551,31 @@ export default function App() {
             </a>
           </div>
 
-          {/* Visual Showcase Banner Grid */}
+          {/* Visual Showcase Banner Grid (Symmetrical 2-Column Cards) */}
           <ScrollReveal delay={150}>
-            <div className="grid grid-cols-1 lg:grid-cols-12 gap-8">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
               
               {/* Concept Art Card A */}
-              <div className="lg:col-span-7 glass-panel rounded-3xl overflow-hidden group">
-                <div className="relative aspect-[16/9] overflow-hidden bg-slate-950">
+              <div className="glass-panel rounded-3xl overflow-hidden group flex flex-col justify-between p-6 space-y-6">
+                <div className="relative aspect-[16/10] rounded-2xl overflow-hidden bg-slate-950">
                   <img 
                     src="/images/crowdtutor/great_tree_of_light.png" 
                     alt="Great Tree of Light Concept Art" 
                     className="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-105"
                   />
-                  <div className="absolute inset-0 bg-gradient-to-t from-[#0c121e] via-transparent to-transparent opacity-80" />
-                  <div className="absolute bottom-4 left-4 right-4 space-y-1">
-                    <span className="text-[10px] font-mono text-amber-400 uppercase tracking-widest font-bold">Interactive World-Building</span>
-                    <h4 className="font-serif font-bold text-lg text-slate-100">The Great Tree of Light & Knowledge Sandbox</h4>
-                  </div>
+                </div>
+                <div className="space-y-2">
+                  <span className="text-[10px] font-mono text-amber-400 uppercase tracking-widest font-bold block">Interactive World-Building</span>
+                  <h4 className="font-serif font-bold text-lg text-slate-100">The Great Tree of Light & 3D Sandbox</h4>
+                  <p className="text-xs text-slate-400 leading-relaxed font-light">
+                    A 3D Three.js / React Three Fiber interactive environment where learners explore interest nodes, construct shared knowledge artifacts, and navigate discovery pathways.
+                  </p>
                 </div>
               </div>
 
               {/* Concept Art Card B */}
-              <div className="lg:col-span-5 glass-panel rounded-3xl overflow-hidden group flex flex-col justify-between p-6 space-y-6">
-                <div className="relative aspect-[4/3] rounded-2xl overflow-hidden bg-slate-950">
+              <div className="glass-panel rounded-3xl overflow-hidden group flex flex-col justify-between p-6 space-y-6">
+                <div className="relative aspect-[16/10] rounded-2xl overflow-hidden bg-slate-950">
                   <img 
                     src="/images/crowdtutor/slide_2_centering_and_creation.png" 
                     alt="Centering and Creation Concept" 
@@ -577,10 +583,10 @@ export default function App() {
                   />
                 </div>
                 <div className="space-y-2">
-                  <span className="text-[10px] font-mono text-emerald-400 uppercase tracking-widest font-bold">VIGOR Elicitation Cycle</span>
-                  <h4 className="font-serif font-bold text-base text-slate-100">Values, Identity, & Goals Assessment</h4>
+                  <span className="text-[10px] font-mono text-emerald-400 uppercase tracking-widest font-bold block">VIGOR Elicitation Cycle</span>
+                  <h4 className="font-serif font-bold text-lg text-slate-100">Values, Identity, & Goals Assessment</h4>
                   <p className="text-xs text-slate-400 leading-relaxed font-light">
-                    Guiding adolescents through reflective check-ins to map universal core drivers and context-specific interest areas.
+                    Guiding adolescents through reflective check-ins to map universal core drivers and context-specific interest areas using Expectancy-Value and Control-Value frameworks.
                   </p>
                 </div>
               </div>
@@ -605,9 +611,9 @@ export default function App() {
               <div className="p-3 rounded-xl bg-emerald-500/10 text-emerald-400 w-fit">
                 <Code className="w-5 h-5" />
               </div>
-              <h4 className="font-serif font-extrabold text-slate-100 text-base">Software Engineering</h4>
+              <h4 className="font-serif font-extrabold text-slate-100 text-base">Software Architecture</h4>
               <p className="text-xs text-slate-400 leading-relaxed font-light">
-                Architected the 3D React Three Fiber game sandbox, shared knowledge barter economy, and wearable geocaching mechanics.
+                Architecting a 3D Three.js / React Three Fiber game sandbox, shared knowledge barter economy, and wearable geocaching mechanics.
               </p>
             </ScrollReveal>
 
@@ -617,7 +623,7 @@ export default function App() {
               </div>
               <h4 className="font-serif font-extrabold text-slate-100 text-base">VAGA Algorithm</h4>
               <p className="text-xs text-slate-400 leading-relaxed font-light">
-                Engineered the Value-Aligned Growth Area dual-potential model calculating growth vs. gifted capacity based on EVT and CVT models.
+                Developing the Value-Aligned Growth Area dual-potential model calculating growth vs. gifted capacity grounded in educational psychology frameworks of motivation and emotion (Expectancy-Value & Control-Value theories).
               </p>
             </ScrollReveal>
 
@@ -627,7 +633,7 @@ export default function App() {
               </div>
               <h4 className="font-serif font-extrabold text-slate-100 text-base">AI Engine Integration</h4>
               <p className="text-xs text-slate-400 leading-relaxed font-light">
-                Developed cognitive-affective learner modeling, synthetic profile simulation for AI training, and automated MMMAAP prompt generation.
+                Integrating cognitive-affective learner modeling, synthetic profile simulation for AI model training, and automated MMMAAP prompt generation.
               </p>
             </ScrollReveal>
 
@@ -909,8 +915,8 @@ export default function App() {
             </div>
             
             <div>
-              <h4 className="font-serif font-bold text-lg text-slate-100">Executive Inquiry</h4>
-              <p className="text-xs text-slate-400 font-light mt-1">Direct all official communications to the Crowd Tutor Foundation inbox.</p>
+              <h4 className="font-serif font-bold text-lg text-slate-100">Get in Touch</h4>
+              <p className="text-xs text-slate-400 font-light mt-1">Direct all communications, research collaborations, or foundation inquiries to the Crowd Tutor inbox.</p>
             </div>
 
             <a 
@@ -935,7 +941,7 @@ export default function App() {
       <footer className="w-full bg-[#030509] border-t border-slate-900 py-12">
         <div className="max-w-7xl mx-auto px-6 flex flex-col sm:flex-row items-center justify-between gap-6 text-xs text-slate-400 font-mono">
           <div>
-            <span className="font-extrabold text-slate-200">J. Joel P. Wiebe</span> • Guelph, Ontario, Canada
+            <span className="font-extrabold text-slate-200">Joel P. Wiebe</span> • Guelph, Ontario, Canada
           </div>
           <div className="flex items-center space-x-6">
             <a href="https://crowdtutor.org" target="_blank" rel="noopener noreferrer" className="hover:text-amber-400 transition-colors">crowdtutor.org</a>
