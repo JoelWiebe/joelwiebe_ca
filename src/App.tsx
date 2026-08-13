@@ -78,7 +78,7 @@ const ALL_PROJECTS = [
     id: "crowd-tutor",
     title: "Crowd Tutor: Knowledge Worlds",
     subtitle: "Flagship Non-Profit AI Learning Platform",
-    category: "Crowd Tutor & AI",
+    category: "Crowd Tutor Spotlight",
     technologies: ["React Three Fiber", "Generative AI", "VAGA Algorithm", "HCI", "Knowledge Economy"],
     description: "An integrative non-profit technology ecosystem engineered to guide adolescent interest exploration. Features a 3D R3F game sandbox, a shared knowledge barter economy, wearable geocaching mechanics, and the VAGA dual-potential algorithm for value-aligned personalized learning.",
     impact: "Primary active project led by Joel Wiebe as Executive Director of the Crowd Tutor Foundation.",
@@ -88,7 +88,7 @@ const ALL_PROJECTS = [
     id: "hitl-ta",
     title: "Human-in-the-Loop Thematic Analysis (HITL-TA)",
     subtitle: "Qualitative Methodology in the Age of LLMs",
-    category: "Crowd Tutor & AI",
+    category: "AI & Methodology",
     technologies: ["Python", "LLMs", "Qualitative Methodologies", "ICLS 2025"],
     description: "Developed a hybrid human-AI qualitative coding methodology presented at ICLS 2025. Combines LLM text processing speed with human qualitative interpretation to perform rigorous thematic analysis on large qualitative corpuses.",
     impact: "Published in Proceedings of ICLS 2025 (Wiebe, Khan, Burns, & Slotta).",
@@ -98,7 +98,7 @@ const ALL_PROJECTS = [
     id: "emotion-analyzer",
     title: "AI Emotion Analysis Pipeline",
     subtitle: "Qualitative Sentiment Parser for Policy Datasets",
-    category: "Crowd Tutor & AI",
+    category: "AI & Methodology",
     technologies: ["Python", "NLP", "Transformers", "LLMs"],
     description: "An automated NLP emotion classification pipeline designed to analyze parent feedback regarding Canadian child care policies across thousands of qualitative interview transcripts.",
     impact: "Under review paper: Yu, Burns, Wiebe et al. High agreement with expert human coders.",
@@ -108,7 +108,7 @@ const ALL_PROJECTS = [
     id: "ai-scoping-review",
     title: "AI Scoping Review Workflow",
     subtitle: "Automated Systematic Review Data Extraction",
-    category: "Crowd Tutor & AI",
+    category: "AI & Methodology",
     technologies: ["Python", "Systematic Review API", "NLP"],
     description: "Engineered an AI-assisted review workflow for literature screening and systematic data extraction exploring the role of AI in Early Childhood Development.",
     impact: "Under review paper: Yu, Wiebe, Burns, Tsiokos, Pancham, & Perlman.",
@@ -162,7 +162,7 @@ const ALL_PROJECTS = [
     technologies: ["Public HCI", "Interactive Exhibits", "Evergreen"],
     description: "Special climate action initiative co-designed with Urban Minds, 1UP Toronto, Evergreen, and ENCORE Lab. Youth created physical and digital displays for the Future Cities Canada Summit at Evergreen Brick Works.",
     impact: "Engaged intergenerational visitors in actionable urban sustainability visions.",
-    imageUrl: "https://images.unsplash.com/photo-1470071459604-3b5ec3a7fe05?auto=format&fit=crop&w=600&q=80"
+    imageUrl: "/images/projects/future_cities_exhibit.jpg"
   },
   {
     id: "ma-thesis",
@@ -172,7 +172,7 @@ const ALL_PROJECTS = [
     technologies: ["Knowledge Forum", "Qualitative Research", "CSCL"],
     description: "Investigated theoretical barriers and opportunities for extending Knowledge Building beyond scheduled classroom hours. Formulated a conceptual framework linking physical world problem-solving with digital idea spaces.",
     impact: "Completed MA Thesis at OISE, University of Toronto.",
-    imageUrl: "https://images.unsplash.com/photo-1457369804613-52c61a468e7d?auto=format&fit=crop&w=600&q=80"
+    imageUrl: "/images/projects/anytime_anywhere_kb_circle.jpg"
   },
   {
     id: "mobile-kb",
@@ -202,7 +202,7 @@ const ALL_PROJECTS = [
     technologies: ["Mobile Prototype", "Crowdsourcing", "Media Literacy"],
     description: "Designed a mobile tool enabling citizens and students to collaboratively dissect online articles based on fact-checking, source reliability, and author bias to counter disinformation.",
     impact: "Graduate design course prototype at OISE, University of Toronto.",
-    imageUrl: "https://images.unsplash.com/photo-1504711434969-e33886168f5c?auto=format&fit=crop&w=600&q=80"
+    imageUrl: "/images/projects/truth_annotator_app_ui.jpg"
   },
   {
     id: "pervasive-math",
@@ -212,7 +212,7 @@ const ALL_PROJECTS = [
     technologies: ["Knowledge Forum", "Elementary Pedagogy"],
     description: "Proposed and piloted an activity pattern using real-world photo capture to bring everyday physical objects into virtual Knowledge Forum spaces for elementary math inquiry.",
     impact: "Presented poster at KBSI 2017.",
-    imageUrl: "https://images.unsplash.com/photo-1606326608606-aa0b62935f2b?auto=format&fit=crop&w=600&q=80"
+    imageUrl: "/images/projects/pervasive_math_inquiry.jpg"
   },
   {
     id: "learning-analytics",
@@ -220,15 +220,15 @@ const ALL_PROJECTS = [
     subtitle: "International Higher-Ed Pilot Study",
     category: "Academic & Inquiry",
     technologies: ["Learning Analytics", "Knowledge Forum Server"],
-    description: "Evaluated embedded learning analytics dashboards for self-assessment and reflection in online higher education Knowledge Building environments in Hong Kong.",
+    description: "Evaluated embedded Knowledge Forum learning analytics dashboards (note contribution network graphs, lexical growth, and reflection charts) for students collaborating on personal laptops in Hong Kong classrooms.",
     impact: "KMD 1001 research pilot with pre/post surveys and instructor interviews.",
-    imageUrl: "https://images.unsplash.com/photo-1551836022-d5d88e9218df?auto=format&fit=crop&w=600&q=80"
+    imageUrl: "/images/projects/kf_hong_kong_classroom.jpg"
   },
   {
     id: "isls-validator",
     title: "ISLS Paper Validator",
     subtitle: "Automated Conference Formatting & Docx Engine",
-    category: "Crowd Tutor & AI",
+    category: "AI & Methodology",
     technologies: ["Python", "Docx Parsing", "Open-Source AST"],
     description: "Co-chaired ISLS Proceedings Task Circle and authored an automated formatting validator that scans submitted docx manuscripts against author guidelines and auto-fixes layout inconsistencies.",
     impact: "Deployed for official ISLS international conference proceedings workflows.",
@@ -252,7 +252,7 @@ const ALL_PROJECTS = [
     technologies: ["C++", "OpenGL", "HCI", "Camera Teleoperation"],
     description: "Researched remote controlling of mobile robots in unfamiliar environments by integrating 1st and 3rd person camera views into a unified teleoperation interface.",
     impact: "Published in IEEE RO-MAN 2017 conference proceedings (UManitoba HCI Lab).",
-    imageUrl: "https://images.unsplash.com/photo-1563206767-5b18f218e8de?auto=format&fit=crop&w=600&q=80"
+    imageUrl: "/images/projects/monocle_teleoperation_interface.jpg"
   },
   {
     id: "mobile-robotics",
@@ -260,7 +260,7 @@ const ALL_PROJECTS = [
     subtitle: "Marathon Autonomous Humanoid Robot",
     category: "HCI & Robotics",
     technologies: ["Computer Vision", "Camera Calibration", "Robotics C++"],
-    description: "Engineered autonomous vision-guided line tracking for DARwIn-OP humanoid robots competing in the HuroCup Marathon. Developed real-time bounding box detection, arrow sign parsing, and gap-stepping path navigation.",
+    description: "Engineered autonomous vision-guided line tracking for an 18-inch DARwIn-OP humanoid robot competing in the HuroCup Marathon. Implemented real-time computer vision bounding boxes to follow thin red tape lines, parse white direction arrow signs on black cards across line breaks, and navigate path segments.",
     impact: "Competed in international HuroCup humanoid robot marathon challenge.",
     imageUrl: "/images/robotics/darwin_robot_marathon.jpg"
   },
@@ -369,9 +369,9 @@ const LIFESTYLE_CARDS = [
   {
     id: "fatherhood-attunement",
     title: "Parenting & Co-Regulation",
-    subtitle: "Active Fatherhood • Emotional Attunement",
+    subtitle: "Parental Leave • Emotional Attunement",
     category: "Human Development",
-    description: "Parental leave offered deep insight into co-regulation and emotional attunement. Supporting a toddler's daily growth reinforces the value of responsive environments and developmental scaffolding.",
+    description: "As an engaged father taking parental leave to raise my infant daughter, supporting her emotional co-regulation and attunement taught me how intentional care shapes human potential—a metaphor I bring directly to architecting responsive AI learning environments and developmental scaffolding.",
     imageUrl: "/images/family/cartoon_joel_family_car.jpg"
   },
   {
@@ -379,7 +379,7 @@ const LIFESTYLE_CARDS = [
     title: "Leadership & Environment",
     subtitle: "Companion Animals • Behavioral Principles",
     category: "Leadership & Empathy",
-    description: "Caring for companion French Bulldogs highlighted the need for clear leadership, championing others, and protecting psychological safety as the foundation for a nurturing developmental environment.",
+    description: "Caring for companion French Bulldogs highlighted the need for clear leadership, championing others, and protecting psychological safety—a metaphor for establishing nurturing, structured environments where both teams and learners can take risks and thrive.",
     imageUrl: "/images/family/cartoon_toddler_wagon_frenchie.jpg"
   },
   {
@@ -387,7 +387,7 @@ const LIFESTYLE_CARDS = [
     title: "Empathy & Perspective",
     subtitle: "Community & Cultural Respect",
     category: "Social Context",
-    description: "Interactions across diverse communities and environments fostered respect for varied backgrounds and human struggles, driving a commitment to build inclusive technology that respects learner agency.",
+    description: "Growing up immersed in diverse family structures, daily community interactions, and travel fostered deep respect for varied lived struggles—a metaphor for designing inclusive technologies that honor cultural agency and diverse human perspectives.",
     imageUrl: "/images/family/cartoon_joel_family_miramichi.jpg"
   },
   {
@@ -395,7 +395,7 @@ const LIFESTYLE_CARDS = [
     title: "IoT, Wearables & Craft",
     subtitle: "Physical & Digital Prototyping",
     category: "Physical & Digital Making",
-    description: "Background in physical trades (framing, roofing, renovations) combined with IoT and wearables exploration continues to inform new frontiers for AI in research, interactive education, and daily life.",
+    description: "Constructing physical architecture through trades like framing and roofing requires exact structural integrity—a metaphor for engineering robust digital-physical interfaces and applying AI across research, education, and daily life.",
     imageUrl: "/images/family/cartoon_toddler_beach.jpg"
   }
 ];
@@ -751,7 +751,7 @@ export default function App() {
 
             {/* Category Filter Tabs */}
             <div className="flex flex-wrap gap-2 p-1.5 bg-[#090e17] border border-slate-800 rounded-2xl">
-              {['All', 'Crowd Tutor & AI', 'Ed-Tech & CSCL', 'Academic & Inquiry', 'HCI & Robotics'].map(tab => (
+              {['All', 'Crowd Tutor Spotlight', 'AI & Methodology', 'Ed-Tech & CSCL', 'Academic & Inquiry', 'HCI & Robotics'].map(tab => (
                 <button
                   key={tab}
                   onClick={() => setActiveTab(tab)}
@@ -823,7 +823,7 @@ export default function App() {
               <span className="text-xs font-mono uppercase tracking-widest text-emerald-400 font-bold block">Life & Personal Foundations</span>
               <h2 className="text-3xl sm:text-5xl font-serif font-black tracking-tight">Life, Craft, & Inquiry</h2>
               <p className="text-slate-300 text-sm sm:text-base leading-relaxed font-light">
-                Diverse life experiences—active fatherhood, animal care, physical construction, and academic studies spanning philosophy, technology, and science—instill my well-rounded perspective. This synthesis informs a nuanced understanding of human development, empathy, and creative applications of emerging AI across research, education, and life.
+                Every dimension of my lived experience serves as a metaphor for my professional practice. From fatherhood on parental leave to animal care, structural construction, and multidisciplinary studies spanning philosophy, technology, and science, these foundations shape my approach to human development, empathy, and creative applications of emerging AI across research, education, and life.
               </p>
             </ScrollReveal>
           </div>
