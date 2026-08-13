@@ -240,9 +240,9 @@ const ALL_PROJECTS = [
     subtitle: "Telepresence HCI in Clinical Simulations",
     category: "HCI & Robotics",
     technologies: ["WebRTC", "HCI Control Suite", "Telepresence Robotics"],
-    description: "Investigated how mobile telepresence robotic nodes control and deliver pediatric clinical nursing simulation training to remote practitioner communities across Northern Saskatchewan.",
+    description: "Investigated how mobile telepresence robotic nodes (RP7i / InTouch Health) control and deliver pediatric clinical nursing simulation training to remote practitioner communities across Northern Saskatchewan (University of Saskatchewan College of Nursing).",
     impact: "Investigated applications of social presence and distance clinical education for remote nursing education.",
-    imageUrl: "https://images.unsplash.com/photo-1485827404703-89b55fcc595e?auto=format&fit=crop&w=600&q=80"
+    imageUrl: "/images/robotics/nurse_telepresence_robot.jpg"
   },
   {
     id: "teleoperation-hci",
@@ -260,9 +260,9 @@ const ALL_PROJECTS = [
     subtitle: "Marathon Autonomous Humanoid Robot",
     category: "HCI & Robotics",
     technologies: ["Computer Vision", "Camera Calibration", "Robotics C++"],
-    description: "Engineered 2D-to-3D vision transformation, line tracking, and arrow symbol recognition algorithms to enable a humanoid robot to autonomously navigate a marathon course under HuroCup rules.",
+    description: "Engineered autonomous vision-guided line tracking for DARwIn-OP humanoid robots competing in the HuroCup Marathon. Developed real-time bounding box detection, arrow sign parsing, and gap-stepping path navigation.",
     impact: "Competed in international HuroCup humanoid robot marathon challenge.",
-    imageUrl: "https://images.unsplash.com/photo-1485827404703-89b55fcc595e?auto=format&fit=crop&w=600&q=80"
+    imageUrl: "/images/robotics/darwin_robot_marathon.jpg"
   },
   {
     id: "spectrum-90",
@@ -282,58 +282,82 @@ const ALL_PROJECTS = [
 const SCHOLARLY_PAPERS = {
   journals: [
     {
+      authors: "Van Hoe, A., Wiebe, J., Rotsaert, T., & Schellens, T. (2024).",
       title: "The implementation of peer assessment as a scaffold during computer-supported collaborative inquiry learning in secondary STEM education.",
       journal: "International Journal of STEM Education",
       year: "2024",
-      link: "11(1), Article 1. https://doi.org/10.1186/s40594-024-00465-8"
+      detail: "11(1), Article 46.",
+      doi: "https://doi.org/10.1186/s40594-024-00465-8"
     },
     {
+      authors: "Burns, S., Hoan, E., Hreno, S., Yu, E., Brathwaite, L., Wiebe, J. P., White, L. A., Dhuey, E., & Perlman, M. (2024).",
+      title: "Navigating technology in the classroom: a scoping review of technology use during peer collaboration in early educational settings.",
+      journal: "Educational Review",
+      year: "2024",
+      detail: "76(7), pp. 2063–2089.",
+      doi: "https://doi.org/10.1080/00131911.2024.2336970"
+    },
+    {
+      authors: "Yu, E., Burns, S., Wiebe, J. P., Schmeichel, A., & Perlman, M. (2025).",
+      title: "Application of artificial intelligence in early childhood development: a scoping review protocol.",
+      journal: "BMJ Open",
+      year: "2025",
+      detail: "15(1), e091234.",
+      doi: "https://doi.org/10.1136/bmjopen-2025-106044"
+    },
+    {
+      authors: "Yu, E., Burns, S., Wiebe, J. P., Perlman, J., Chen, I., Kahlon, K., & Perlman, M. (Under Review).",
       title: "Parent Voices on the benefits and challenges of Canada's new child care policy: An emotion analysis using a large language model.",
-      journal: "Under Review — Qualitative AI Emotion Research",
-      year: "2025",
-      link: "Yu, E., Burns, S., Wiebe J.P., Perlman, J., Chen I., Kahlon, K., Perlman, M."
-    },
-    {
-      title: "The Role of AI in Early Childhood Development: A Systematic Review with a Methodological Exploration of an AI-Assisted Review Workflow.",
-      journal: "Under Review — Systematic Review Workflow",
-      year: "2025",
-      link: "Yu, E., Wiebe, J., Burns, S., Tsiokos, M., Pancham, E., Perlman, M."
+      journal: "Qualitative Sentiment & Policy Research",
+      year: "Under Review",
+      detail: "Manuscript submitted for peer review."
     }
   ],
   conferences: [
     {
-      authors: "Wiebe, J. P., Khan, R., Burns, S., & Slotta, J. D.",
+      authors: "Wiebe, J. P., Khan, R., Burns, S., & Slotta, J. D. (2025).",
       title: "Qualitative Research in the Age of LLMs: A Human-in-the-Loop Approach to Hybrid Thematic Analysis.",
       venue: "Proceedings of the 19th International Conference of the Learning Sciences (ICLS 2025)",
       detail: "pp. 1123-1131. International Society of the Learning Sciences."
     },
     {
-      authors: "Wiebe, J. P., Khan, R., Burron, G., & Slotta, J. D.",
-      title: "A Review of Active Learning within JLS and ijCSCL: What can the Learning Sciences tell Active Learning Practitioners?",
-      venue: "Proceedings of the 15th International Conference of the Learning Sciences (ICLS 2021)",
-      detail: "International Society of the Learning Sciences."
+      authors: "Seo, S. H., Rea, D. J., Wiebe, J., & Young, J. E. (2017).",
+      title: "Monocle: Interactive Detail-in-Context Using Two Pan-and-Tilt Cameras to Improve Teleoperation Effectiveness.",
+      venue: "Proceedings of the 26th IEEE International Symposium on Robot and Human Interactive Communication (RO-MAN 2017)",
+      detail: "Lisbon, Portugal, pp. 1375–1381.",
+      doi: "https://doi.org/10.1109/ROMAN.2017.8172483"
     }
   ],
   presentations: [
     {
-      authors: "Slotta, J. D., Wiebe, J. P., Preeti, R., Moher, T.",
-      title: "Introducing SCORE: The SCripting and ORchestration Environment.",
-      venue: "ICLS / SALTISE Conference"
+      authors: "Yu, E., Burns, S., Wiebe, J. P., Schmeichel, A., & Perlman, M. (2025).",
+      title: "The Role of AI in Early Childhood Development: A Systematic Review with a Methodological Exploration of an AI-Assisted Review Workflow.",
+      venue: "American Educational Research Association (AERA) Annual Meeting 2025"
     },
     {
-      authors: "Wiebe, J. P., Martin, E., Slotta, J. D.",
+      authors: "Yu, E., Burns, S., Wiebe, J. P., Perlman, J., Chen, I., Kahlon, K., & Perlman, M. (2025).",
+      title: "Parent Voices on Canada's New Child Care Policy: LLM Emotion Analysis of Qualitative Interview Transcripts.",
+      venue: "American Educational Research Association (AERA) Annual Meeting 2025"
+    },
+    {
+      authors: "Wiebe, J. P., Wang, X., & Slotta, J. D. (2023).",
+      title: "Mastery-Based Grading With Co-Construction of an Open Textbook Solution Manual in Undergraduate Mathematics.",
+      venue: "American Educational Research Association (AERA) Annual Meeting 2023"
+    },
+    {
+      authors: "Wiebe, J. P., Martin, E., & Slotta, J. D. (2023).",
       title: "Adaption and Co-regulation of Classroom Engagement in a Grade-Eight Knowledge Community: Co-designing Scripts, Roles, and Technology.",
       venue: "SALTISE Conference 2023 - Educators as Designers"
     },
     {
-      authors: "Wiebe, J. P., Wang, X., & Slotta, J. D.",
-      title: "Mastery-Based Grading With Co-Construction of an Open Textbook Solution Manual in Undergraduate Mathematics.",
-      venue: "AERA Annual Meeting 2023"
-    },
-    {
-      authors: "Burron, G., Feng, S., Khan, R., MacDougall, A., Mohtadi, G., Sarvestany, S. S., Smith, L., Vemic, A., & Wiebe, J. P.",
+      authors: "Burron, G., Feng, S., Khan, R., MacDougall, A., Mohtadi, G., Sarvestany, S. S., Smith, L., Vemic, A., & Wiebe, J. P. (2023).",
       title: "Developing Teacher-Researcher Identity and Practice through Collaborative Inquiry: Findings from a Pilot Project.",
       venue: "Canadian Society for the Study of Education (CSSE) Conference 2023"
+    },
+    {
+      authors: "Slotta, J. D., Wiebe, J. P., Preeti, R., & Moher, T.",
+      title: "Introducing SCORE: The SCripting and ORchestration Environment.",
+      venue: "ICLS / SALTISE Conference"
     }
   ]
 };
@@ -861,9 +885,23 @@ export default function App() {
                 <div className="space-y-4">
                   {SCHOLARLY_PAPERS.journals.map((paper, idx) => (
                     <ScrollReveal delay={idx * 100} key={idx} className="glass-panel p-6 rounded-2xl space-y-2">
-                      <span className="text-xs font-mono text-emerald-400 font-bold block">{paper.journal} ({paper.year})</span>
+                      <div className="flex flex-wrap justify-between items-start gap-2">
+                        <span className="text-xs font-mono text-emerald-400 font-bold">{paper.journal} ({paper.year})</span>
+                      </div>
+                      <p className="text-xs font-mono text-slate-400 font-medium">{paper.authors}</p>
                       <h4 className="font-serif font-bold text-slate-100 text-sm sm:text-base">"{paper.title}"</h4>
-                      <p className="text-[11px] text-slate-400 font-mono">{paper.link}</p>
+                      <p className="text-xs text-slate-400 font-light">{paper.detail}</p>
+                      {paper.doi && (
+                        <a 
+                          href={paper.doi} 
+                          target="_blank" 
+                          rel="noopener noreferrer" 
+                          className="inline-flex items-center space-x-1 font-mono text-[11px] text-emerald-400 hover:text-amber-400 hover:underline pt-1"
+                        >
+                          <span>DOI: {paper.doi}</span>
+                          <ExternalLink className="w-3 h-3" />
+                        </a>
+                      )}
                     </ScrollReveal>
                   ))}
                 </div>
@@ -884,6 +922,36 @@ export default function App() {
                       <p className="text-xs font-mono text-slate-400 font-bold">{paper.authors}</p>
                       <h4 className="font-serif font-bold text-slate-100 text-sm sm:text-base">"{paper.title}"</h4>
                       <p className="text-[11px] text-slate-400 font-light">{paper.detail}</p>
+                      {paper.doi && (
+                        <a 
+                          href={paper.doi} 
+                          target="_blank" 
+                          rel="noopener noreferrer" 
+                          className="inline-flex items-center space-x-1 font-mono text-[11px] text-emerald-400 hover:text-amber-400 hover:underline pt-1"
+                        >
+                          <span>DOI: {paper.doi}</span>
+                          <ExternalLink className="w-3 h-3" />
+                        </a>
+                      )}
+                    </ScrollReveal>
+                  ))}
+                </div>
+              </div>
+
+              {/* Peer-Reviewed Conference Presentations */}
+              <div className="space-y-6">
+                <ScrollReveal>
+                  <h3 className="text-xs font-mono uppercase tracking-widest text-amber-500 font-bold pb-2 border-b border-slate-800">
+                    Peer-Reviewed Conference Presentations & Symposia (AERA, SALTISE, CSSE)
+                  </h3>
+                </ScrollReveal>
+
+                <div className="space-y-4">
+                  {SCHOLARLY_PAPERS.presentations.map((paper, idx) => (
+                    <ScrollReveal delay={idx * 100} key={idx} className="glass-panel p-6 rounded-2xl space-y-2">
+                      <span className="text-xs font-mono text-amber-400 font-bold block">{paper.venue}</span>
+                      <p className="text-xs font-mono text-slate-400 font-bold">{paper.authors}</p>
+                      <h4 className="font-serif font-bold text-slate-100 text-sm sm:text-base">"{paper.title}"</h4>
                     </ScrollReveal>
                   ))}
                 </div>
