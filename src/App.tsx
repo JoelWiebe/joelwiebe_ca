@@ -448,7 +448,7 @@ export default function App() {
             <nav className="flex items-center space-x-6 sm:space-x-8 text-xs font-mono tracking-widest text-slate-400 font-bold uppercase whitespace-nowrap">
               <a href="#crowdtutor" className="hover:text-amber-400 transition-colors whitespace-nowrap">Crowd Tutor</a>
               <a href="#ai-methodologies" className="hover:text-amber-400 transition-colors whitespace-nowrap">AI Research</a>
-              <a href="#projects" className="hover:text-amber-400 transition-colors whitespace-nowrap">Projects ({ALL_PROJECTS.length})</a>
+              <a href="#projects" className="hover:text-amber-400 transition-colors whitespace-nowrap">Projects</a>
               <a href="#chronicles" className="hover:text-amber-400 transition-colors whitespace-nowrap">Life & Craft</a>
               <a href="#scholarly" className="hover:text-amber-400 transition-colors whitespace-nowrap">Scholarly</a>
             </nav>
@@ -743,7 +743,7 @@ export default function App() {
           <div className="flex flex-col md:flex-row md:items-end justify-between gap-6">
             <div className="space-y-3">
               <span className="text-xs font-mono uppercase tracking-widest text-amber-500 font-bold block">Complete Record</span>
-              <h2 className="text-3xl sm:text-5xl font-serif font-black tracking-tight">Project Portfolio ({ALL_PROJECTS.length})</h2>
+              <h2 className="text-3xl sm:text-5xl font-serif font-black tracking-tight">Project Portfolio</h2>
               <p className="text-slate-400 text-sm max-w-xl font-light">
                 Explore production platforms, academic research tools, CSCL scripting environments, and robotics control suites built throughout Joel's career.
               </p>
